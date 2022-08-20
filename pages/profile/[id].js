@@ -4,6 +4,7 @@ import { client, getProfileById, getPublicationsById } from "../../api";
 import Image from "next/image";
 import ABI from "../../abi.json";
 import { ethers } from "ethers";
+import Layout from "../../components/Layout";
 
 const CONTRACT_ADDRESS = "0xDb46d1Dc155634FbC732f92E853b10B288AD5a1d";
 
@@ -46,7 +47,7 @@ export default function Profile() {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
 
-    const contract = new ethers.Contract(address, ABI, signer);
+    const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
 
     try {
       const tx = await contract.follow([id], [0x0]);
@@ -58,7 +59,7 @@ export default function Profile() {
   }
 
   return (
-    <div>
+    <Layout>
       <button onClick={connectWallet}>Connect</button>
       {profile && (
         <div>
@@ -91,6 +92,6 @@ export default function Profile() {
           ))}
         </div>
       )}
-    </div>
+    </Layout>
   );
 }
