@@ -7,7 +7,7 @@ import { ethers } from "ethers";
 import Layout from "../../components/Layout";
 import Head from "next/head";
 
-const CONTRACT_ADDRESS = "0xDb46d1Dc155634FbC732f92E853b10B288AD5a1d";
+const CONTRACT_ADDRESS = "0x8C1f82e8AAD9399f52DcF224b77f33d5c1719241";
 
 export default function Profile() {
   const [profile, setProfile] = useState();
@@ -109,6 +109,7 @@ export default function Profile() {
                   </p>
                 </div>
                 <p className="mb-4">{profile.bio}</p>
+                {/* Add connect and follow buttons here */}
                 {accounts ? (
                   <button
                     onClick={followUser}
@@ -127,6 +128,7 @@ export default function Profile() {
                   </button>
                 )}
               </div>
+              {/* Add publications here */}
               {pubs.length > 0 && (
                 <div className="border-t-2 border-gray-100 my-8 py-8 flex flex-col space-y-8">
                   {pubs.map((p, index) => (
