@@ -1,8 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lens API Starter for 30 Days of Web3
+
+Dive into the tutorial here: https://www.30daysofweb3.xyz/en/curriculum/9-wrapping-up/0-build-with-lens
 
 ## Getting Started
 
-First, run the development server:
+First, fork and clone this starter repo. You can find similar instructions on forking and cloning a repo here: https://www.30daysofweb3.xyz/en/curriculum/3-writing-your-smart-contract/1-dev-setup
+
+After you've cloned the repo, open this project in your IDE and then run the development server in your terminal:
 
 ```bash
 npm run dev
