@@ -1,6 +1,6 @@
 # Lens API Starter for 30 Days of Web3
 
-Dive into the tutorial here: https://www.30daysofweb3.xyz/en/curriculum/9-wrapping-up/0-build-with-lens
+Dive into the tutorial here: https://www.30daysofweb3.xyz/en/curriculum/9-wrapping-up/0-intro-to-lens
 
 ## Getting Started
 
