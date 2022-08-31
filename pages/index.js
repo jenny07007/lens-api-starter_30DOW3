@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { client, recommendProfiles } from "../api";
+import Image from "next/image";
+import { client, recommendedProfiles } from "../api";
 
 export default function Home() {
   useEffect(() => {
@@ -10,14 +10,12 @@ export default function Home() {
 
   async function fetchProfiles() {
     try {
-      const response = await client.query(recommendProfiles).toPromise();
+      const response = await client.query(recommendedProfiles).toPromise();
       console.log({ response });
     } catch (err) {
       console.log(err);
     }
   }
 
-  return (
-    <div></div>
-  );
+  return <div></div>;
 }
